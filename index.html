@@ -14,7 +14,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- tailwind custom classes: -->
+    <!-- font awesome link: -->
+    <script src="https://kit.fontawesome.com/978a3087fc.js" crossorigin="anonymous"></script>
+
+    <!-- tailwind custom color classes: -->
     <script>
         tailwind.config = {
           theme: {
@@ -38,6 +41,7 @@
 </head>
 
 <body class="font-poppins">
+    <!-- header part: -->
     <header class="md:container md:mx-auto">
         <!-- navbar part: -->
         <nav>
@@ -155,10 +159,37 @@
           </div>
     </header>
 
+    <!-- main body part: -->
     <main class="md:container md:mx-auto">
-        <!-- featured bikes: -->
-        <section>
-            
+        <!-- featured Rider rating: -->
+        <section class="my-24">
+            <div class="hero">
+                <div class="hero min-h-screen bg-base-200">
+                    <div class="hero-content flex-col lg:flex-row">
+                        
+                        <div>
+                            <h1 class="text-7xl font-extrabold">
+                            It's good <br> 
+                            riding time at the <br>
+                            open highway</h1>
+                            <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                            <button class="btn text-white btn-primary">Explore more</button>
+                        </div>
+                        <div>
+                            <img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" class="max-w-sm rounded-lg shadow-2xl" />
+                            <!-- ratings badge: -->
+                            <div class="-mt-20 flex items-center gap-4 border-2  bg-white drop-shadow-lg p-5 w-45">
+                                <i class="fa-regular fa-star text-5xl text-amber-400"></i>
+                                <div>
+                                    <h3 class="text-3xl">5.00</h3>
+                                    <p>Trust Rider Rating</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- latest bikes: -->
@@ -270,6 +301,26 @@
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- row-span section: -->
+        <section class="my-24 flex flex-col md:flex-row lg:flex-row">
+            <div class="grid gap-8 grid-cols-1 md:grid-cols-2">
+                <div class="grid gap-8 grid-rows-3 md:grid-rows-3 lg:grid-rows-3">
+                    <div class="rounded-xl border-2 bg-slate-500"></div>
+                    <div class="row-span-2">
+                        <img src="images/others/latest1.png" alt="">
+                    </div>
+                </div>
+                <div class="grid gap-8 grid-rows-3 md:grid-rows-3 lg:grid-rows-3">
+                    <div class="row-span-2">
+                        <img src="images/others/latest2.png" alt="">
+                    </div>
+                    <div class="rounded-xl border-2 bg-slate-500"></div>
+                </div>
+                
+            </div>
+
         </section>
 
         <!-- Frequently Asked Questions: -->
